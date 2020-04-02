@@ -1,0 +1,12 @@
+spring:
+  application:
+    name:aws-learning
+cloud:
+  aws:
+    credentials:
+      accessKey:
+      secret-key:
+      instance-profile: true
+      use-default-aws-credentials-chain: true
+    region:
+      static: eu-west-3
