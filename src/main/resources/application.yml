@@ -1,12 +1,21 @@
 spring:
   application:
-    name:aws-learning
+    name: aws-learning
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+
 cloud:
   aws:
     credentials:
       accessKey:
-      secret-key:
+      secretKey:
       instance-profile: true
       use-default-aws-credentials-chain: true
     region:
       static: eu-west-3
+    stack:
+      auto: false
